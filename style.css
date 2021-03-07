@@ -46,7 +46,7 @@ p {
 
 .top-image {
     width: 100%;
-    background-image: url("../images/main.jpg");
+    background-image: url("./images/main.jpg");
     background-size: cover;
     position: relative;
     padding: 300px 0 300px 0;
