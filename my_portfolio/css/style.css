@@ -1,0 +1,275 @@
+@charset "utf-8";
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
+    line-height: 1.75;
+    min-width: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.bg-light {
+    width: 100%;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.custom-hamburger .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    font-size: 2rem;
+    margin: 0 30px;
+    color: #fff !important;
+}
+
+.top-image {
+    width: 100%;
+    background-image: url("../images/main.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 300px 0 300px 0;
+}
+
+
+/*三角CSS*/
+
+.top-image:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50vw 50px 50vw;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+}
+
+
+/*三角CSS<ここまで>*/
+
+.top-image .main-img {
+    padding: 0 0 30px;
+}
+
+.main-img-text {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    text-align: center;
+    padding: 110px;
+    border-radius: 15px;
+}
+
+.main-img-text h1 {
+    font-size: 6vw;
+}
+
+.main-img-text p {
+    font-size: 3vw;
+    margin-top: 0px
+}
+
+.sub-img {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+}
+
+.title-style {
+    padding-bottom: 50px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.about-me {
+    padding-top: 100px;
+    background-color: #fff;
+    padding-bottom: 150px;
+}
+
+.about-me-wrapper {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.about-me-text {
+    position: relative;
+    z-index: 3;
+}
+
+.blue-bgc {
+    width: 40px;
+    height: 42px;
+    background-color: rgb(206 179 45);
+    position: absolute;
+    top: 1%;
+    right: 44%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.blue-bgc-s {
+    width: 486px;
+    height: 115px;
+    background-color: rgb(206 179 45 / 15%);
+    position: absolute;
+    top: 78%;
+    left: 61%;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+
+/*my-skill*/
+
+.my-skill {
+    background: url(../images/s.jpg) center center no-repeat;
+    background-size: cover;
+    /*下記は背景画像を固定するプロパティ*/
+    background-attachment: fixed;
+}
+
+.my-skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 73%;
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+}
+
+.my-skill-item {
+    background-color: #fff;
+    width: 450px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .5);
+    margin-right: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    object-fit: cover;
+}
+
+.my-skill-item a {
+    /*カード全体をリンクにするCSS*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.my-skill-picture {
+    width: 100%;
+}
+
+.my-skill-introduction {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*Service*/
+
+.service {
+    background: url(../images/se.jpg) center center no-repeat;
+    background-size: cover;
+    /*下記は背景画像を固定するプロパティ*/
+    background-attachment: fixed;
+}
+
+.service h1 {
+    color: #fff;
+}
+
+.service-box {
+    width: 960px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, .4);
+    box-sizing: border-box
+}
+
+.service-box img {
+    width: 430px;
+}
+
+.service-item1 {
+    /*高さが定まっていない要素の横並びはFlexboxとobject-fitの合わせ技で対応*/
+    display: flex;
+    /*下記は画像や動画といった要素を、それを内包している要素に対してどのように配置するかをコントロールするプロパティ*/
+    object-fit: cover;
+}
+
+.service-item2 {
+    display: flex;
+    flex-direction: row-reverse;
+    object-fit: cover;
+}
+
+.service-textbox {
+    background-color: #FFFFF3;
+    width: 430px;
+    padding: 90px 20px;
+}
+
+.service-text {
+    margin-top: 20px;
+}
+
+.service-caution {
+    color: #fff;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+.company {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.logo-image {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-image img {
+    margin-right: 60px;
+}
+
+footer {
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    margin: 0 auto;
+}
